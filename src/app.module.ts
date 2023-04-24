@@ -7,6 +7,7 @@ import { AppService } from './app.service';
 import { AppController } from './app.controller';
 import { UserEntity } from './users/entities/user.entity';
 import { FileEntity } from './files/entities/file.entity';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { FileEntity } from './files/entities/file.entity';
     }),
     UsersModule,
     FilesModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
